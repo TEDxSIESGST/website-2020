@@ -329,7 +329,7 @@
       sessionStorage.setItem("try", "0");
       var lastname = sessionStorage.getItem("lastname");
       var done = document.cookie;
-      if(lastname == "Smith" || done.contains("done=zigzag"))
+      if(lastname == "Smith" || done.includes("done=zigzag"))
       {
         req_success();
       }
