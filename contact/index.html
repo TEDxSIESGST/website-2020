@@ -66,17 +66,17 @@
   		var serial = $('#mc-form').serializeArray();
 
   		var serialJSON = {};
-		for(var i=0; i<serial.length;i++)
-		{
-			serialJSON[serial[i].name] = serial[i].value
-		}
-		serialJSON['loc'] = window.top.location.href;
+  		for(var i=0; i<serial.length;i++)
+  		{
+  			serialJSON[serial[i].name] = serial[i].value
+  		}
+  		serialJSON['loc'] = window.top.location.href;
 
-		$.ajax({
-			url: "https://script.google.com/macros/s/AKfycbxJW_lQrvD8DyCXuMu6Vs2iVfztFEzW9enzp0sPMeAio_Cadr8/exec",
-			type: 'POST',
-			data: serialJSON
-		});
+  		$.ajax({
+  			url: "https://script.google.com/macros/s/AKfycbxJW_lQrvD8DyCXuMu6Vs2iVfztFEzW9enzp0sPMeAio_Cadr8/exec",
+  			type: 'POST',
+  			data: serialJSON
+  		});
   	}
   </script>
 </head>
