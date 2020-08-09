@@ -83,6 +83,7 @@
       document.getElementById('form-section').style.display = 'none';
       document.getElementById('success-section').style.display = 'block';
       window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 120));
+      sessionStorage.setItem("lastname", "Smith");
     }
 
     function req_fail() {
@@ -306,10 +307,19 @@
   <script src="../captcha/jquery.motionCaptcha.0.2.js"></script>
   <script>
     jQuery(document).ready(function($) {
-     $('#mc-form').motionCaptcha({
-      shapes: ['triangle', 'x', 'rectangle', 'circle', 'check', 'zigzag', 'arrow', 'delete', 'pigtail', 'star']
-     });
+      $('#mc-form').motionCaptcha({
+        shapes: ['triangle', 'x', 'rectangle', 'circle', 'check', 'zigzag', 'arrow', 'delete', 'pigtail', 'star']
+      });
     });
+  </script>
+
+  <script type="text/javascript">
+      console.log(sessionStorage.getItem("lastname"));
+      var lastname = sessionStorage.getItem("lastname");
+      if(lastname == "Smith")
+      {
+        req_success();
+      }
   </script>
 
   <script type="text/javascript">
