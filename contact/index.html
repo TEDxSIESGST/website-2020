@@ -63,6 +63,14 @@
 
   <script type="text/javascript">
   	function checkMail() {
+      var tryNo = sessionStorage.getItem("try");
+      var tryInt = parseInt(tryNo, 10);
+      if(tryInt>2)
+      {
+        document.getElementById('final-submit').setAttribute('value', 'Send Message');
+        alert('There is a SERVER ERROR!\nSorry for inconvenience :(\nPlease contact our team.\nThank You!');
+        return;
+      }
   		var serial = $('#mc-form').serializeArray();
 
   		var serialJSON = {};
@@ -89,7 +97,11 @@
     function req_error() {
       document.getElementById('final-submit').setAttribute('value', 'Send Message');
       document.getElementById('final-submit').removeAttribute('disabled');
-      alert('There was a SERVER ERROR!\nSorry for inconvenience :(\nPlease try again.\nIf the issue persists, please contact our team.\nThank You!')
+      alert('There was a SERVER ERROR!\nSorry for inconvenience :(\nPlease try again.\nIf the issue persists, please contact our team.\nThank You!');
+      var tryNo = sessionStorage.getItem("try");
+      var tryInt = parseInt(tryNo, 10);
+      tryInt++;
+      sessionStorage.setItem("try", tryInt.toString());
     }
   </script>
 </head>
@@ -414,7 +426,7 @@
   </script>
 
   <script type="text/javascript">
-      console.log(sessionStorage.getItem("lastname"));
+      sessionStorage.setItem("try", "0");
       var lastname = sessionStorage.getItem("lastname");
       if(lastname == "Smith")
       {
