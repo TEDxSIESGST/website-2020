@@ -88,10 +88,17 @@
 
     function req_success() {
       document.getElementById('form-section').style.display = 'none';
+      document.getElementById('done-section').style.display = 'none';
       document.getElementById('success-section').style.display = 'block';
       window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 120));
       sessionStorage.setItem("lastname", "Smith");
       document.cookie="done=zigzag; expires=18 Dec 2020 12:00:00 UTC; path=/";
+    }
+
+    function req_done() {
+      document.getElementById('form-section').style.display = 'none';
+      document.getElementById('success-section').style.display = 'none';
+      document.getElementById('done-section').style.display = 'block';
     }
 
     function req_fail() {
@@ -253,6 +260,34 @@
         </div>
       </div>
 
+
+      <div id="done-section" style="display: none;">
+        <div class="row no-padding-rl">
+          <div class="col-md-12">
+            <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">
+              Registration Already Done!
+            </h2>
+            <span class="bg-base-color xs-margin-6 xs-no-margin-rl margin-3 no-margin-rl separator-line-extra-thick-long"></span>
+          </div>
+          <!-- //.col-md-12 -->
+        </div>
+        <!-- //.row -->
+
+        <div class="container">
+          <span class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase">
+            Thank You for registering!
+          </span>
+          <div class="row margin-2 no-margin-rl no-margin-bottom">
+            <p class="font-family-alt sm-text-large text-extra-large text-gray-dark-2">
+              We appreciate your interest. We're grateful and extremely excited to go through your form.
+            </p>
+            <span class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2">
+                 
+            Please give our small team some time to review all of the entries we receive.<br>Thank you for your support!</span>
+          </div>
+        </div>
+      </div>
+
       
 
 
@@ -329,7 +364,11 @@
       sessionStorage.setItem("try", "0");
       var lastname = sessionStorage.getItem("lastname");
       var done = document.cookie;
-      if(lastname == "Smith" || done.includes("done=zigzag"))
+      if(done.includes("done=zigzag"))
+      {
+        req_done();
+      }
+      if(lastname == "Smith")
       {
         req_success();
       }
