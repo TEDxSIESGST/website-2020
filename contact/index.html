@@ -66,17 +66,17 @@
   		var serial = $('#mc-form').serializeArray();
 
   		var serialJSON = {};
-  		for(var i=0; i<serial.length;i++)
-  		{
-  			serialJSON[serial[i].name] = serial[i].value
-  		}
-  		serialJSON['loc'] = window.top.location.href;
+		for(var i=0; i<serial.length;i++)
+		{
+			serialJSON[serial[i].name] = serial[i].value
+		}
+		serialJSON['loc'] = window.top.location.href;
 
-  		$.ajax({
-  			url: "https://script.google.com/macros/s/AKfycbxJW_lQrvD8DyCXuMu6Vs2iVfztFEzW9enzp0sPMeAio_Cadr8/exec",
-  			type: 'POST',
-  			data: serialJSON
-  		});
+		$.ajax({
+			url: "https://script.google.com/macros/s/AKfycbxJW_lQrvD8DyCXuMu6Vs2iVfztFEzW9enzp0sPMeAio_Cadr8/exec",
+			type: 'POST',
+			data: serialJSON
+		});
   	}
   </script>
 </head>
@@ -103,7 +103,7 @@
 
         <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right">
           <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700">
-            <li><a href="/Alumni/" class="page-scroll">About</a></li>
+            <li><a href="/alumni" class="page-scroll">About</a></li>
             <li><a href="/speakers/" class="line-height-unset">Speakers</a></li>
             <li><a href="/our-team/" class="line-height-unset">Our Team</a></li>
             <li><a href="/contact/" class="line-height-unset">Contact Us</a></li>
