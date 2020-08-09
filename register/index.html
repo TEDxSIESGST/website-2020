@@ -91,6 +91,7 @@
       document.getElementById('success-section').style.display = 'block';
       window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 120));
       sessionStorage.setItem("lastname", "Smith");
+      document.cookie="done=zigzag; expires=18 Dec 2020 12:00:00 UTC; path=/";
     }
 
     function req_fail() {
@@ -327,7 +328,8 @@
   <script type="text/javascript">
       sessionStorage.setItem("try", "0");
       var lastname = sessionStorage.getItem("lastname");
-      if(lastname == "Smith")
+      var done = document.cookie;
+      if(lastname == "Smith" || done.contains("done=zigzag"))
       {
         req_success();
       }
