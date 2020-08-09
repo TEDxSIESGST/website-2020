@@ -91,7 +91,7 @@
       document.getElementById('form-section').style.display = 'none';
       document.getElementById('success-section').style.display = 'block';
       window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 50));
-      sessionStorage.setItem("lastname", "Smith");
+      sessionStorage.setItem("firstname", "Smith");
     }
 
     function req_error() {
@@ -427,8 +427,8 @@
 
   <script type="text/javascript">
       sessionStorage.setItem("try", "0");
-      var lastname = sessionStorage.getItem("lastname");
-      if(lastname == "Smith")
+      var firstname = sessionStorage.getItem("firstname");
+      if(firstname == "Smith")
       {
         req_success();
       }
