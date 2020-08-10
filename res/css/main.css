@@ -478,8 +478,7 @@ h6 {
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%
-  opacity: 30%!important
+  width: 100% 
 }
 
 .bg-overlay-black-1:before {

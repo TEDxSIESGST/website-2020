@@ -73,13 +73,13 @@
 /* Home BG Slideshow */
 
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
-  background: url("../images/Banners/BG27.jpg");
+  background: url("../images/Banners/B2.jpg");
 }
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
-  background: url("../images/Banners/BG18.jpg");
+  background: url("../images/Banners/B1.png");
 }
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
-  background: url("../images/Banners/BG25.jpg");
+  background: url("../images/Banners/B3.jpg");
 }
 
 
