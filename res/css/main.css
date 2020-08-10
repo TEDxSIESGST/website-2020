@@ -494,7 +494,7 @@ h6 {
 }
 
 .bg-overlay-black-4:before {
-  background: rgba(0, 0, 0, .76)!important
+  background: rgba(0, 0, 0, .4)!important
 }
 
 .bg-overlay-black-5:before {
