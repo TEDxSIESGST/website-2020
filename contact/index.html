@@ -451,6 +451,11 @@
 
   <script type="text/javascript">
     document.getElementById('mc-form').onsubmit = function() {
+      var okay = (document.getElementById('mc-form').getAttribute('action'));
+      if(okay != 'javascript: void(0)')
+      {
+        return false;
+      }
       document.getElementById('final-submit').setAttribute('value', 'Sending...');
       document.getElementById('final-submit').setAttribute('disabled', '');
 
