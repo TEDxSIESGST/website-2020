@@ -1,5 +1,5 @@
 $('.countdown-timer').countdown({
-    date: "October 27, 2020 10:00:00",
+    date: "October 17, 2020 10:00:00",
 
     render: function(data) {
         $(".days .value").html(this.leadingZeros(data.days, 2));
