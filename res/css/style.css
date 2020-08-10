@@ -73,14 +73,15 @@
 /* Home BG Slideshow */
 
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
-  background: url("../images/bg-parallax7.jpg");
+  background: url("../images/Banners/BG27.jpg");
 }
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
-  background: url("../images/bg-parallax5.png");
+  background: url("../images/Banners/BG18.jpg");
 }
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
-  background: url("../images/bg-parallax6.png");
+  background: url("../images/Banners/BG25.jpg");
 }
+
 
 
 /* Home BG Slider */
@@ -647,7 +648,7 @@
   padding-bottom: 25px;
 }
 .footer-logo img {
-  width: 120px;
+  width: 220px;
 }
 .footer .disclaimer {
   padding-bottom: 25px;
