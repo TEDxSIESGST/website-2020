@@ -77,6 +77,9 @@
   <![endif]-->
 
   <script type="text/javascript">
+    var noe = 0;
+
+
     function checkMail() {
       var tryNo = sessionStorage.getItem("try");
       var tryInt = parseInt(tryNo, 10);
@@ -97,17 +100,23 @@
       $.ajax({
         url: "https://script.google.com/macros/s/AKfycbz4XPL9CK4QOZb45j8Y0QALH7tvcSIF932-JwFUDNm1VQ0_N10/exec",
         type: 'POST',
-        data: serialJSON
+        data: serialJSON,
+        success: function(res){if(res == "req_error()"){req_error();}else if(res == "req_success()"){req_success();}else if(res == "req_fail()"){req_fail();}},
+        error: function(res){req_error();}
       });
     }
 
     function req_success() {
-      document.getElementById('form-section').style.display = 'none';
-      document.getElementById('done-section').style.display = 'none';
-      document.getElementById('success-section').style.display = 'block';
-      window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 120));
-      sessionStorage.setItem("lastname", "Smith");
-      document.cookie="done=zigzag; expires=18 Dec 2020 12:00:00 UTC; path=/";
+      if(noe == 0)
+      {
+        noe++;
+        document.getElementById('form-section').style.display = 'none';
+        document.getElementById('done-section').style.display = 'none';
+        document.getElementById('success-section').style.display = 'block';
+        window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 120));
+        sessionStorage.setItem("lastname", "Smith");
+        document.cookie="done=zigzag; expires=18 Dec 2020 12:00:00 UTC; path=/";
+      }
     }
 
     function req_done() {
@@ -117,19 +126,27 @@
     }
 
     function req_fail() {
-      document.getElementById('final-submit').setAttribute('value', 'Submit');
-      document.getElementById('final-submit').removeAttribute('disabled');
-      document.getElementById('already').style.display = 'inline-block';
+      if(noe == 0)
+      {
+        noe++;
+        document.getElementById('final-submit').setAttribute('value', 'Submit');
+        document.getElementById('final-submit').removeAttribute('disabled');
+        document.getElementById('already').style.display = 'inline-block';
+      }
     }
 
     function req_error() {
-      document.getElementById('final-submit').setAttribute('value', 'Submit');
-      document.getElementById('final-submit').removeAttribute('disabled');
-      alert('There was a SERVER ERROR!\nSorry for inconvenience :(\nPlease try again.\nIf the issue persists, please contact our team.\nThank You!');
-      var tryNo = sessionStorage.getItem("try");
-      var tryInt = parseInt(tryNo, 10);
-      tryInt++;
-      sessionStorage.setItem("try", tryInt.toString());
+      if(noe == 0)
+      {
+        noe++;
+        document.getElementById('final-submit').setAttribute('value', 'Submit');
+        document.getElementById('final-submit').removeAttribute('disabled');
+        alert('There was a SERVER ERROR!\nSorry for inconvenience :(\nPlease try again.\nIf the issue persists, please contact our team.\nThank You!');
+        var tryNo = sessionStorage.getItem("try");
+        var tryInt = parseInt(tryNo, 10);
+        tryInt++;
+        sessionStorage.setItem("try", tryInt.toString());
+      }
     }
   </script>
 </head>

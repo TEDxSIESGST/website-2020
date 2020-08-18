@@ -77,6 +77,9 @@
   <![endif]-->
 
   <script type="text/javascript">
+    var noe = 0;
+
+
   	function checkMail() {
       var tryNo = sessionStorage.getItem("try");
       var tryInt = parseInt(tryNo, 10);
@@ -98,25 +101,35 @@
   		$.ajax({
   			url: "https://script.google.com/macros/s/AKfycbxJW_lQrvD8DyCXuMu6Vs2iVfztFEzW9enzp0sPMeAio_Cadr8/exec",
   			type: 'POST',
-  			data: serialJSON
+  			data: serialJSON,
+        success: function(res){if(res == "req_error()"){req_error();}else if(res == "req_success()"){req_success();}},
+        error: function(res){req_error();}
   		});
   	}
 
     function req_success() {
-      document.getElementById('form-section').style.display = 'none';
-      document.getElementById('success-section').style.display = 'block';
-      window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 50));
-      sessionStorage.setItem("firstname", "Smith");
+      if(noe == 0)
+      {
+        noe++;
+        document.getElementById('form-section').style.display = 'none';
+        document.getElementById('success-section').style.display = 'block';
+        window.scroll(0, (document.getElementById('success-section').getBoundingClientRect().top + window.scrollY - 50));
+        sessionStorage.setItem("firstname", "Smith");
+      }
     }
 
     function req_error() {
-      document.getElementById('final-submit').setAttribute('value', 'Send Message');
-      document.getElementById('final-submit').removeAttribute('disabled');
-      alert('There was a SERVER ERROR!\nSorry for inconvenience :(\nPlease try again.\nIf the issue persists, please contact our team.\nThank You!');
-      var tryNo = sessionStorage.getItem("try");
-      var tryInt = parseInt(tryNo, 10);
-      tryInt++;
-      sessionStorage.setItem("try", tryInt.toString());
+      if(noe == 0)
+      {
+        noe++;
+        document.getElementById('final-submit').setAttribute('value', 'Send Message');
+        document.getElementById('final-submit').removeAttribute('disabled');
+        alert('There was a SERVER ERROR!\nSorry for inconvenience :(\nPlease try again.\nIf the issue persists, please contact our team.\nThank You!');
+        var tryNo = sessionStorage.getItem("try");
+        var tryInt = parseInt(tryNo, 10);
+        tryInt++;
+        sessionStorage.setItem("try", tryInt.toString());
+      }
     }
   </script>
 </head>
