@@ -198,6 +198,20 @@
   </head>
 
   <body id="page-top">
+
+    <script type="text/javascript">
+      sessionStorage.setItem("try", "0");
+      var lastname = sessionStorage.getItem("lastname");
+      var done = document.cookie;
+      if (done.includes("done=zing")) {
+        req_done();
+      }
+      if (lastname == "Smith") {
+        req_success();
+      }
+    </script>
+
+    
     <!-- Navigation Start -->
     <nav id="navigation" class="navbar navbar-fixed-top navbar-dark">
       <div class="container">
@@ -667,17 +681,7 @@
       });
     </script>
 
-    <script type="text/javascript">
-      sessionStorage.setItem("try", "0");
-      var lastname = sessionStorage.getItem("lastname");
-      var done = document.cookie;
-      if (done.includes("done=zing")) {
-        req_done();
-      }
-      if (lastname == "Smith") {
-        req_success();
-      }
-    </script>
+    
 
     <script type="text/javascript">
       document.getElementById("mc-form").onsubmit = function () {
