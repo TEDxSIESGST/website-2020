@@ -108,6 +108,13 @@
           );
           return;
         }
+
+        if(document.getElementById('name').value.length<4 || !document.getElementById('email').value.includes('@') || document.getElementById('email').value.length<4 || document.getElementById('contact').getAttribute('pattern') != '[+0-9]{0,5}[0-9\\s-]{8,13}' || document.getElementById('contact').value.length<8)
+        {
+          alert('Please fill correct details!');
+          return false;
+        }
+
         var serial = $("#mc-form").serializeArray();
         var serialJSON = {};
         for (var i = 0; i < serial.length; i++) {
@@ -328,7 +335,7 @@
                   
                   <input
                     type="text"
-                    pattern="[+9870][0-9]{9,12}"
+                    pattern="[+0-9]{0,5}[0-9\s-]{8,13}"
                     title="Enter Your Phone Number"
                     placeholder=""
                     name="contact"
