@@ -157,7 +157,7 @@
           );
           sessionStorage.setItem("lastname", "Smith");
           document.cookie =
-            "done=zigzag; expires=18 Dec 2020 12:00:00 UTC; path=/";
+            "done=zing; expires=18 Dec 2020 12:00:00 UTC; path=/";
         }
       }
 
@@ -481,7 +481,7 @@
               class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase"
             >
               We're not accepting registrations anymore!
-            </span> -->
+            </span>
             <div class="row margin-2 no-margin-rl no-margin-bottom">
               <p
                 class="font-family-alt sm-text-large text-extra-large text-gray-dark-2"
@@ -495,7 +495,7 @@
               >
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div id="success-section" style="display: none">
           <div class="row no-padding-rl">
@@ -523,14 +523,12 @@
               <p
                 class="font-family-alt sm-text-large text-extra-large text-gray-dark-2"
               >
-                We appreciate your interest. We're grateful and extremely
-                excited to go through your form.
+                We appreciate your interest. If you have any questions leading up to the event, you can contact us on our social media handles.
               </p>
               <span
                 class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2"
               >
-                Please give our small team some time to review all of the
-                entries we receive.<br />Thank you for your support!</span
+                Please make sure you received a mail from our side confirming your registration.<br />Thank you for your support!</span
               >
             </div>
           </div>
@@ -562,14 +560,12 @@
               <p
                 class="font-family-alt sm-text-large text-extra-large text-gray-dark-2"
               >
-                We appreciate your interest. We're grateful and extremely
-                excited to go through your form.
+                We appreciate your interest. If you have any questions leading up to the event, you can contact us on our social media handles.
               </p>
               <span
                 class="display-block margin-2 no-margin-bottom no-margin-rl text-medium text-gray-dark-2"
               >
-                Please give our small team some time to review all of the
-                entries we receive.<br />Thank you for your support!</span
+                Please make sure you received a mail from our side confirming your registration.<br />Thank you for your support!</span
               >
             </div>
           </div>
@@ -675,7 +671,7 @@
       sessionStorage.setItem("try", "0");
       var lastname = sessionStorage.getItem("lastname");
       var done = document.cookie;
-      if (done.includes("done=zigzag")) {
+      if (done.includes("done=zing")) {
         req_done();
       }
       if (lastname == "Smith") {
