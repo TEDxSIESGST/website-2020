@@ -20,6 +20,22 @@ body {
 	background: #FF2B06;
 }
 
+input, button, textarea {
+	border-radius: 0 !important;
+}
+
+strong {
+	color: #f36046;
+	font-size: 17px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.438);
+}
+
+button {
+	background-color: #FF2B06 !important;
+	border: none !important;
+	padding: 10px 25px !important;
+}
+
 .countdown {
 	text-align: center;
 	margin-top: 30px;

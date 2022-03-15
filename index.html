@@ -14,19 +14,19 @@
     <meta name="title" content="TEDxSIESGST">
     <meta name="description"
         content="TEDxSIESGST is providing a platform for creative and innovative minds who could voice out their opinions to adapt and tackle not only the current scenario but also similar circumstances that could arise in future.">
-    <meta property="og:image" content="https://tedxsiesgst.in/images/logos/dark.png">
+    <meta property="og:image" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
     <meta property="og:url" content="https://tedxsiesgst.in/">
     <meta property="og:site_name" content="TEDxSIESGST">
 
     <meta name="twitter:title" content="TEDxSIESGST">
     <meta name="twitter:description"
         content="TEDxSIESGST provides a platform for creative and innovative minds who could voice out their opinions to adapt and tackle not only the current scenario but also similar circumstances that could arise in future.">
-    <meta name="twitter:image" content="https://tedxsiesgst.in/images/logos/dark.png">
+    <meta name="twitter:image" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
     <meta name="twitter:image:alt" content="TEDxSIESGST">
-    <meta name="twitter:card" content="https://tedxsiesgst.in/images/logos/dark.png">
+    <meta name="twitter:card" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
     <meta name="twitter:site" content="@TEDxSIESGST">
 
-    <meta name="image" property="og:image" content="https://tedxsiesgst.in/images/logos/dark.png">
+    <meta name="image" property="og:image" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
     <meta name="author" content="TEDxSIESGST">
 
 
@@ -34,21 +34,35 @@
 
 <body>
 
+
     <div class="container text-center pt-5">
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 col-8">
                 <img src="./images/logos/dark.png" alt="" class="w-100">
             </div>
-            <h2 class="text-white mt-5">
-                Stay Tuned We're Launching Soon.
-            </h2>
         </div>
+        <h2 class="text-white mt-5">
+            Applications for TEDxSIESGST 2022 team will open in...
+        </h2>
     </div>
-    <div class="countdown_container">
+    <div class="countdown_container mt-5">
         <div class="countdown styled text-white">
 
         </div>
+        <!-- <div class="container h-100" style="height: 400px !important;">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-8 text-white text-center">
+                    <h2>
+                        Applications for TEDxSIESGST 2022 team are now Open!
+                    </h2>
+                    <button class="text-white mt-3">
+                        Apply Now
+                    </button>
+                </div>
+            </div>
+        </div> -->
     </div>
+
 
     <div class="container text-center">
         <div class="row justify-content-center">
@@ -59,9 +73,11 @@
                 <br>
                 <div id="subscribe">
                     <form method="POST" id="contactForm" name="contactForm">
-                        <p class="subscribe-input"><input type="email" name="Email" size="20"
-                                placeholder="Subscribe your e-mail Id" value="" required><input type="submit"
-                                value="Submit" name="Submit"></p>
+                        <p class="subscribe-input">
+                            <input type="email" name="Email" size="20" placeholder="Subscribe your e-mail Id" value=""
+                                required>
+                            <input type="submit" value="Submit" name="Submit">
+                        </p>
                     </form>
                 </div>
             </div>
@@ -119,10 +135,16 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
     <!--Scripts-->
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbykympRlNaypzUKaFWoJ-7uzvQlry4bn0oWgZgTKWwQgumXSGZJejdBfbzeFjYmjemVdg/exec'
         const form = document.forms['contactForm']
@@ -133,6 +155,7 @@
                 .catch(error => console.error(error.message))
             document.getElementById("contactForm").reset();
         });
+
     </script>
 </body>
 
