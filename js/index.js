@@ -1,5 +1,9 @@
 $(function () {
+<<<<<<< HEAD
   var endDate = "Mar 15, 2022 13:00:00";
+=======
+  var endDate = "Mar 15, 2022 16:30:00";
+>>>>>>> 71bd369a9140c3c9d9f3c25ef9df6e905b01a4e8
 
   $('.countdown.simple').countdown({ date: endDate });
 
