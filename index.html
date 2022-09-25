@@ -1,156 +1,856 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEDxSIESGST</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="shortcut icon" href="./images/logos/tedx.jpg">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="title" content="TEDxSIESGST">
-    <meta name="description"
-        content="TEDxSIESGST is providing a platform for creative and innovative minds who could voice out their opinions to adapt and tackle not only the current scenario but also similar circumstances that could arise in future.">
-    <meta property="og:image" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
-    <meta property="og:url" content="https://tedxsiesgst.in/">
-    <meta property="og:site_name" content="TEDxSIESGST">
+    <!-- Title, icon, description and keywords -->
+    <title>TEDxSIESGST | Home</title>
+    <link rel="shortcut icon" href="res/images/favicon.ico" />
+    <link rel="icon" href="res/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="res/images/favicon.ico" />
+    <meta
+      name="description"
+      content="TEDxSIESGST, x = independently organised TED event. SomethinK Different. This October, at SIES Graduate School of Technology."
+    />
+    <meta
+      name="keywords"
+      content="TEDx, SIESGST, SIES Graduate School of Technology, Navi Mumbai, event, talks, home, official, online, live, website"
+    />
 
-    <meta name="twitter:title" content="TEDxSIESGST">
-    <meta name="twitter:description"
-        content="TEDxSIESGST provides a platform for creative and innovative minds who could voice out their opinions to adapt and tackle not only the current scenario but also similar circumstances that could arise in future.">
-    <meta name="twitter:image" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
-    <meta name="twitter:image:alt" content="TEDxSIESGST">
-    <meta name="twitter:card" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
-    <meta name="twitter:site" content="@TEDxSIESGST">
+    <!-- Social media tags -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="TEDxSIESGST" />
+    <meta
+      property="og:description"
+      content="SomethinK Different. This October, at SIES Graduate School of Technology."
+    />
+    <meta property="og:image" content="https://tedxsiesgst.live/og_icon.png" />
+    <meta property="og:url" content="https://tedxsiesgst.live" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="TEDxSIESGST" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@TEDxSIESGST" />
+    <meta name="twitter:title" content="TEDxSIESGST" />
+    <meta
+      name="twitter:description"
+      content="SomethinK Different. This October, at SIES Graduate School of Technology."
+    />
+    <meta name="twitter:image" content="https://tedxsiesgst.live/og_icon.png" />
+    <!-- Google+ -->
+    <meta itemprop="name" content="TEDxSIESGST" />
+    <meta
+      itemprop="description"
+      content="SomethinK Different. This October, at SIES Graduate School of Technology."
+    />
+    <meta itemprop="image" content="https://tedxsiesgst.live/og_icon.png" />
 
-    <meta name="image" property="og:image" content="https://tedxsiesgst.in/images/logos/tedx_siesgst_square.jpg">
-    <meta name="author" content="TEDxSIESGST">
+    <!-- Browser themes -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="res/css/bootstrap.min.css" />
 
-</head>
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="res/css/font-awesome.min.css" />
 
-<body>
+    <!-- Plugins -->
+    <link rel="stylesheet" href="res/css/flickity.min.css" />
+    <link rel="stylesheet" href="res/css/magnific-popup.css" />
 
+    <!-- Main styles -->
+    <link rel="stylesheet" href="res/css/main.css" />
+    <link rel="stylesheet" href="res/css/style.css" />
 
-    <div class="container text-center pt-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-8">
-                <img src="./images/logos/dark.png" alt="" class="w-100">
-            </div>
+    <!-- Color skin -->
+    <link rel="stylesheet" href="res/css/color_red.css" />
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+      <script src="res/js/modernizr.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation Start -->
+    <nav id="navigation" class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header col-lg-3">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a
+              class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase"
+              href="/"
+            >
+              <img
+                class="logo-navbar-dark"
+                src="res/images/logos/dark.png"
+                alt="TEDxSIESGST"
+              />
+              <img
+                class="logo-navbar-white"
+                src="res/images/logos/light.png"
+                alt="TEDx_SIESGST"
+              />
+            </a>
+          </div>
+          <!-- //.navbar-header -->
+
+          <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right">
+            <ul
+              class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700"
+            >
+              <li><a href="/about/" class="line-height-unset">About</a></li>
+              <li>
+                <a href="/speakers/" class="line-height-unset">Speakers</a>
+              </li>
+              <li>
+                <a href="/our-team/" class="line-height-unset">Our Team</a>
+              </li>
+              <li>
+                <a href="/contact/" class="line-height-unset">Contact Us</a>
+              </li>
+              <li class="bg-base-color">
+                <a href="/register/" class="line-height-unset width-100">
+                  Register
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- //.navbar-collapse -->
         </div>
-    </div>
-    <div class="countdown_container mt-5">
-        <div class="container h-100" style="height: 400px !important;">
-            <div class="row h-100 align-items-center justify-content-center">
-                <div class="col-lg-8 text-white text-center">
-                    <h2>
-                        Applications for TEDxSIESGST 2022 team are now Open!
-                    </h2>
-                    <button class="text-white mt-3" onclick="window.location.href = 'https://tedxsiesgst.in/apply';">
-                        Apply Now
-                    </button>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
+    </nav>
+    <!-- //Navigation End -->
+
+    <!-- Section - Home Start -->
+    <section
+      id="home-bg-slideshow"
+      class="bg-gray-dark-2 height-100 no-padding overflow-hidden width-100"
+    >
+      <!-- BG Slideshow -->
+      <!-- Slide Show Image 1-->
+
+      <div
+        class="bg-slideshow-wrapper flexslider height-100 no-border no-border-radius no-margin width-100"
+      >
+        <div class="slides height-100 width-100">
+          <div
+            class="bg-cover bg-overlay-black-6 display-block height-100 width-100"
+          >
+            <div
+              class="display-table height-100 position-absolute position-top position-left width-100"
+            >
+              <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1 text-center">
+                      <picture>
+                        <source
+                          media="(min-width: 900px)"
+                          srcset="./res/images/logos/SD2.png"
+                        />
+                        <source
+                          media="(min-width: 300px)"
+                          srcset="./res/images/logos/SD.png"
+                        />
+                        <img
+                          src="OtherImage.png"
+                          alt="IfItDoesntMatchAnyMedia"
+                        />
+                      </picture>
+
+                      <!--   <h1 class="font-family-alt font-weight-900 letter-spacing-2 text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
+                      <span class="text-base-color">SomethinK</span> Different
+                    </h1> -->
+                      <br />
+                      <h3
+                        class="font-weight-700 letter-spacing-2 text-white xs-title-large sm-title-extra-large title-extra-large-3"
+                      >
+                        24<sup>th</sup> October, 2020<br />
+                        10:00 AM
+                      </h3>
+                      <p
+                        class="font-family-alt text-white sm-title-small title-medium"
+                      ></p>
+                      <br />
+                      <h4
+                        class="font-family-alt font-weight-900 letter-spacing-2 text-uppercase text-white xs-title-small sm-title-medium title-extra-large"
+                      >
+                        SIES Graduate School of Technology, Nerul, Navi Mumbai
+                      </h4>
+                      <br />
+                      <a
+                        href="/register/"
+                        class="btn btn-outline-white sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl"
+                      >
+                        Attendee Registration
+                      </a>
+                    </div>
+                    <!-- //.col-md-10 -->
+                  </div>
+                  <!-- //.row -->
                 </div>
+                <!-- //.container -->
+              </div>
+              <!-- //.display-table-cell -->
             </div>
-        </div>
-    </div>
+            <!-- //.display-table -->
+          </div>
+          <!-- //.bg-cover -->
 
+          <!-- Slide Show Image 2-->
+          <div
+            class="bg-cover bg-overlay-black-3 display-block height-100 width-100"
+          >
+            <div
+              class="display-table height-100 position-absolute position-top position-left width-100"
+            >
+              <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1 text-center">
+                      <!--
+                    <h1 class="font-family-alt font-weight-900 letter-spacing-2 text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
+                      <span class="text-base-color">SomethinK</span> Different
+                    </h1> -->
 
-    <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-8 py-4 text-white">
-                <h4>
-                    Subscribe To Get Notified
-                </h4>
-                <br>
-                <div id="subscribe">
-                    <form method="POST" id="contactForm" name="contactForm">
-                        <p class="subscribe-input">
-                            <input type="email" name="Email" size="20" placeholder="Subscribe your e-mail Id" value=""
-                                required>
-                            <input type="submit" value="Submit" name="Submit">
-                        </p>
-                    </form>
+                      <picture>
+                        <source
+                          media="(min-width: 900px)"
+                          srcset="./res/images/logos/SD2.png"
+                        />
+                        <source
+                          media="(min-width: 300px)"
+                          srcset="./res/images/logos/SD.png"
+                        />
+                        <img
+                          src="OtherImage.png"
+                          alt="IfItDoesntMatchAnyMedia"
+                        />
+                      </picture>
+
+                      <br />
+                      <h3
+                        class="font-weight-700 letter-spacing-2 text-white xs-title-large sm-title-extra-large title-extra-large-3"
+                      >
+                        24<sup>th</sup> October, 2020<br />
+                        10:00 AM
+                      </h3>
+                      <p
+                        class="font-family-alt text-white sm-title-small title-medium"
+                      ></p>
+                      <br />
+                      <h4
+                        class="font-family-alt font-weight-900 letter-spacing-2 text-uppercase text-white xs-title-small sm-title-medium title-extra-large"
+                      >
+                        SIES Graduate School of Technology, Nerul, Navi Mumbai
+                      </h4>
+                      <br />
+                      <a
+                        href="/register/"
+                        class="btn btn-outline-white sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl"
+                      >
+                        Attendee Registration
+                      </a>
+                    </div>
+                    <!-- //.col-md-10 -->
+                  </div>
+                  <!-- //.row -->
                 </div>
+                <!-- //.container -->
+              </div>
+              <!-- //.display-table-cell -->
             </div>
-        </div>
-    </div>
-    <footer class="container pb-3">
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-4">
-                <div class="row justify-content-center">
-                    <div class="col-2">
-                        <a href="https://www.facebook.com/tedxsiesgst/" target="_blank" style="text-decoration: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi icons bi-facebook" viewBox="0 0 16 16" style="color: white;">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="https://twitter.com/tedxsiesgst" target="_blank" style="text-decoration: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi icons bi-twitter" viewBox="0 0 16 16" style="color: white;">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="https://www.instagram.com/tedxsiesgst/" target="_blank" style="text-decoration: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi icons bi-instagram" viewBox="0 0 16 16" style="color: white;">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="https://www.linkedin.com/company/tedxsiesgst" target="_blank"
-                            style="text-decoration: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi icons bi-linkedin" viewBox="0 0 16 16" style="color: white;">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center text-white mt-5">
-            <div class="col-12" style="font-size: 12px;">
-                &copy; 2022 TEDxSIESGST
-            </div>
+            <!-- //.display-table -->
+          </div>
+          <!-- //.bg-cover -->
 
+          <!-- Slide Show Image 3-->
+
+          <div
+            class="bg-cover bg-overlay-black-7 display-block height-100 width-100"
+          >
+            <div
+              class="display-table height-100 position-absolute position-top position-left width-100"
+            >
+              <div class="display-table-cell vertical-align-middle">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1 text-center">
+                      <!-- <h1 class="font-family-alt font-weight-900 letter-spacing-2 text-white xs-title-extra-large sm-title-extra-large-3 title-extra-large-5">
+                      <span class="text-base-color">SomethinK</span> Different 
+                    </h1> -->
+
+                      <picture>
+                        <source
+                          media="(min-width: 900px)"
+                          srcset="./res/images/logos/SD2.png"
+                        />
+                        <source
+                          media="(min-width: 300px)"
+                          srcset="./res/images/logos/SD.png"
+                        />
+                        <img
+                          src="OtherImage.png"
+                          alt="IfItDoesntMatchAnyMedia"
+                        />
+                      </picture>
+
+                      <br />
+                      <h3
+                        class="font-weight-700 letter-spacing-2 text-white xs-title-large sm-title-extra-large title-extra-large-3"
+                      >
+                        24<sup>th</sup> October, 2020<br />
+                        10:00 AM
+                      </h3>
+                      <p
+                        class="font-family-alt text-white sm-title-small title-medium"
+                      ></p>
+                      <br />
+                      <h4
+                        class="font-family-alt font-weight-900 letter-spacing-2 text-uppercase text-white xs-title-small sm-title-medium title-extra-large"
+                      >
+                        SIES Graduate School of Technology, Nerul, Navi Mumbai
+                      </h4>
+                      <br />
+                      <a
+                        href="/register/"
+                        class="btn btn-outline-white sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl"
+                      >
+                        Attendee Registration
+                      </a>
+                    </div>
+                    <!-- //.col-md-10 -->
+                  </div>
+                  <!-- //.row -->
+                </div>
+                <!-- //.container -->
+              </div>
+              <!-- //.display-table-cell -->
+            </div>
+            <!-- //.display-table -->
+          </div>
+          <!-- //.bg-cover -->
         </div>
+        <!-- //.slides -->
+      </div>
+      <!-- //.bg-slideshow-wrapper -->
+    </section>
+    <!-- //Section - Home End -->
+
+    <!-- Section - About Start -->
+    <section id="about" class="bg-white-3 pull-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-7">
+            <h1
+              class="font-family-alt font-weight-700 sm-title-large title-extra-large-1 text-gray-dark-2"
+            >
+              About TEDxSIESGST
+            </h1>
+            <span
+              class="bg-base-color margin-1 no-margin-bottom no-margin-rl separator-line-extra-thick-long"
+            ></span>
+            <div class="row">
+              <div class="col-md-12">
+                <p
+                  class="font-family-alt margin-5-5 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2"
+                >
+                  Voice of a beautiful mind combined with the willingness to
+                  inspire. Isn't that all we need to inspire people to look at
+                  the world differently. Hence TEDx SIESGST provides a platform
+                  for people with innovative thoughts who could inspire masses
+                  to tackle hurdles from various walks of their respective
+                  lives. Keeping our theme <b>“SomethinK Different” </b>in mind
+                  we aim to throw light on the fact that the world is going
+                  through a global change.
+                </p>
+                <p
+                  class="font-family-alt margin-5-5 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2"
+                >
+                  TEDx SIESGST is providing a platform for creative and
+                  innovative minds who could voice out their opinions to adapt
+                  and tackle not only the current scenario but also similar
+                  circumstances that could arise in future.
+                </p>
+              </div>
+              <!-- //.col-sm-6 -->
+            </div>
+            <!-- //.row -->
+          </div>
+          <!-- //.col-sm-6 -->
+
+          <div
+            class="col-sm-6 col-md-4 col-md-offset-1 xs-margin-8 xs-no-margin-rl xs-no-margin-bottom"
+          >
+            <div class="testimonial">
+              <div
+                class="bg-white border border-gray-light border-round padding-5 width-100"
+              >
+                <h4 class="font-weight-700 font-family-alt">About TEDx</h4>
+                <br />
+                <p class="no-margin text-gray-dark- text-large">
+                  In the spirit of ideas worth spreading, TEDx is a program for
+                  local, self-organized events that bring people together to
+                  share a TED-like experience. At a TEDx event, TEDTalks video
+                  and live speakers combine to spark deep discussion and
+                  connection. These local, self-organized events are branded
+                  with TEDx, where x = an independently organized TED event. The
+                  TED Conference provides general guidance for the TEDx program,
+                  but individual TEDx events are self-organized.
+                </p>
+              </div>
+              <!-- //.bg-white -->
+            </div>
+            <!-- //.testimonial -->
+          </div>
+          <!-- //.col-sm-6 -->
+        </div>
+      </div>
+      <!-- //.container -->
+    </section>
+    <!-- //Section - About End -->
+
+    <!-- Section - Venue Start -->
+    <section
+      id="venue"
+      class="bg-cover bg-overlay-black-7 display-table height-100 no-padding width-100"
+    >
+      <div class="display-table-cell vertical-align-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <!-- <br><br><h3 class="display-block font-family-alt font-weight-900 letter-spacing-2 text-uppercase text-white xs-title-extra-large-4 title-extra-large-4">
+              Watch Live
+            </h3>----->
+              <br />
+              <p
+                class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-white xs-title-small title-large text-uppercase font-weight-700"
+              >
+                Official YouTube Live Stream<br />
+              </p>
+              <br />
+              <a
+                href="https://youtu.be/MsWcV0A6IwI" onclick="window.open(this.href,'_blank');return false;"
+                class="btn btn-outline-white sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl"
+              >
+                Going Live On <br> 24<sup>th</sup> October 2020 <br>10:00 AM
+              </a>
+            </div>
+            <!-- //.col-md-8 -->
+          </div>
+          <!-- //.row -->
+        </div>
+        <!-- //.container -->
+      </div>
+      <!-- //.display-table-cell -->
+    </section>
+    <!-- //Section - Venue End -->
+
+    <!-- Section - Social start -->
+    <section id="social" class="bg-gray-light-2 pull-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1
+              class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2"
+            >
+              Connect with us
+            </h1>
+            <span
+              class="bg-base-color margin-4 no-margin-bottom no-margin-rl separator-line-extra-thick-long"
+            ></span>
+          </div>
+        </div>
+        <!-- //.row -->
+        <br /><br />
+        <div class="row">
+          <!-- Social Box -->
+          <div class="features-box col-sm-6 col-md-4">
+            <div
+              class="border border-gray-light border-round box-shadow-yes position-relative bg-white"
+            >
+              <div
+                class="display-table height-100 no-padding-rl padding-7 width-100"
+              >
+                <div
+                  class="display-table-cell no-padding-tb padding-8 vertical-align-middle"
+                >
+                  <span
+                    class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center"
+                  >
+                    Facebook
+                  </span>
+
+                  <!-- Facebook plugin -->
+                  <div id="fb-root"></div>
+
+                  <script>
+                    (function (d, s, id) {
+                      var js,
+                        fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s);
+                      js.id = id;
+                      js.src =
+                        "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=203606196348015";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    })(document, "script", "facebook-jssdk");
+                  </script>
+
+                  <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/tedxsiesgst"
+                    data-tabs="timeline"
+                    data-small-header="true"
+                    data-adapt-container-width="true"
+                    data-hide-cover="true"
+                    data-show-facepile="false"
+                  >
+                    <blockquote
+                      cite="https://www.facebook.com/tedxsiesgst"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      <a href="https://www.facebook.com/tedxsiesgst"
+                        >TEDxSIESGST</a
+                      >
+                    </blockquote>
+                  </div>
+                  <!-- //Facebook plugin -->
+                </div>
+                <!-- //.display-table-cell -->
+              </div>
+              <!-- //.display-table -->
+            </div>
+            <!-- //.border -->
+          </div>
+          <!-- //Social Box -->
+
+          <!-- Social Box -->
+          <div
+            class="features-box col-sm-6 col-md-4 xs-margin-4 xs-no-margin-rl xs-no-margin-bottom"
+          >
+            <div
+              class="border border-gray-light border-round box-shadow-yes position-relative bg-white"
+            >
+              <div
+                class="display-table height-100 no-padding-rl padding-7 width-100"
+              >
+                <div
+                  class="display-table-cell no-padding-tb padding-8 vertical-align-middle"
+                >
+                  <span
+                    class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center"
+                  >
+                    Twitter
+                  </span>
+
+                  <!-- Twitter timeline -->
+                  <a
+                    class="twitter-timeline"
+                    data-height="493"
+                    data-chrome="noheader, nofooter"
+                    data-dnt="true"
+                    href="https://twitter.com/tedxsiesgst"
+                    >Tweets by TEDx_SIESGST</a
+                  >
+                  <script
+                    async
+                    src="https://platform.twitter.com/widgets.js"
+                    charset="utf-8"
+                  ></script>
+                  <!-- //Twitter timeline -->
+                </div>
+                <!-- //.display-table-cell -->
+              </div>
+              <!-- //.display-table -->
+            </div>
+            <!-- //.border -->
+          </div>
+          <!-- //Social Box -->
+
+          <!-- Social Box -->
+          <div
+            class="features-box col-sm-6 col-md-4 sm-margin-4 sm-no-margin-rl sm-no-margin-bottom"
+          >
+            <div
+              class="border border-gray-light border-round box-shadow-yes position-relative bg-white"
+            >
+              <div
+                class="display-table height-100 no-padding-rl padding-7 width-100"
+              >
+                <div
+                  class="display-table-cell no-padding-tb padding-8 vertical-align-middle"
+                >
+                  <span
+                    class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center"
+                  >
+                    Instagram
+                  </span>
+
+                  <!-- Instagram posts -->
+                  <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                  <div style="height: 500px; overflow-y: auto">
+                    <iframe
+                      src="https://snapwidget.com/embed/860219"
+                      class="snapwidget-widget"
+                      allowTransparency="true"
+                      frameborder="0"
+                      style="border: none; width: 100%"
+                    ></iframe>
+                  </div>
+                  <!-- //Instagram posts -->
+                </div>
+                <!-- //.display-table-cell -->
+              </div>
+              <!-- //.display-table -->
+            </div>
+            <!-- //.border -->
+          </div>
+          <!-- //Social Box -->
+        </div>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
+    </section>
+    <!-- //Section - Social end -->
+
+    <!-- Section - Event banner start -->
+    <section id="event-banner" class="bg-white pull-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <i
+              class="fa fa-clock-o display-block text-base-color title-extra-large-2"
+            ></i>
+            <span
+              class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+            >
+              Date &amp; Time
+            </span>
+            <p
+              class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2"
+            >
+              24<sup>th</sup> October, 2020<br />
+              10:00 AM
+            </p>
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div
+            class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center"
+          >
+            <i
+              class="fa fa-map-marker display-block text-base-color title-extra-large-2"
+            ></i>
+            <span
+              class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase"
+            >
+              SIES Graduate School of Technology
+            </span>
+            <p
+              class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2"
+            >
+              Youtube Live Stream<br />
+            </p>
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div
+            id="banner-registration"
+            class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center"
+          >
+            <a
+              href="https://youtu.be/MsWcV0A6IwI" onclick="window.open(this.href,'_blank');return false;"
+              class="btn btn-outline-base-color sm-btn-medium btn-large no-margin-rl"
+            >
+              <span>YouTube Live<br />Link</span>
+            </a>
+          </div>
+          <!-- //.col-sm-4 -->
+        </div>
+        <!-- //.row -->
+      </div>
+    </section>
+    <!-- //Section - Event banner end -->
+
+    <!-- Section - Parallax banner start -->
+    <section
+      id="home-bg-parallax"
+      class="height-50 no-padding overflow-hidden width-100"
+    >
+      <!-- BG Parallax -->
+      <div
+        class="bg-parallax bg-overlay-black-3 width-100"
+        style="
+          -webkit-background-size: 100% 100% !important;
+          background-size: 100% 100% !important;
+        "
+      ></div>
+
+      <div
+        class="display-table height-100 position-absolute position-top position-left width-100"
+      >
+        <div class="display-table-cell vertical-align-middle">
+          <div class="container">
+            <div class="row">
+              <div class="countdown-timer">
+                <div class="days">
+                  <span class="value">00</span>
+                  <span class="label">DAYS</span>
+                </div>
+                <div class="hours">
+                  <span class="value">00</span>
+                  <span class="label">HOURS</span>
+                </div>
+                <div class="minutes">
+                  <span class="value">00</span>
+                  <span class="label">MINS</span>
+                </div>
+                <div class="seconds">
+                  <span class="value">00</span>
+                  <span class="label">SEC</span>
+                </div>
+              </div>
+            </div>
+            <!-- //.row -->
+          </div>
+          <!-- //.container -->
+        </div>
+        <!-- //.display-table-cell -->
+      </div>
+      <!-- //.display-table -->
+    </section>
+    <!-- //Section - Parallax banner end -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer-logo xs-text-center">
+              <img src="./res/images/footer2.png" alt="" />
+            </div>
+            <!-- //.footer-logo -->
+            <p class="disclaimer xs-text-center">
+              This independent TEDx event is operated under license from TED.
+            </p>
+            <!-- //.disclaimer -->
+          </div>
+          <!-- //.col-sm-4 -->
+
+          <div class="col-sm-8">
+            <div class="footer-social text-right">
+              <ul
+                class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium"
+              >
+                <li>
+                  <a href="https://www.facebook.com/tedxsiesgst/"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/tedxsiesgst"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/tedxsiesgst/"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/tedxsiesgst"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <br />
+                <p class="disclaimer xs-text-center">
+                  <br />
+                  Copyright © 2020 TEDxSIESGST. <br />
+                  <a href="/Privacy/privacy.html">Privacy Policy</a>
+                </p>
+              </ul>
+            </div>
+            <!-- //.footer-social -->
+          </div>
+          <!-- //.col-sm-8 -->
+        </div>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
     </footer>
+    <!-- //Footer End -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- Scroll to top -->
+    <a href="#page-top" class="page-scroll scroll-to-top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
 
-    <!--Scripts-->
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countdown.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <!-- jQuery -->
+    <script src="res/js/jquery.min.js"></script>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbykympRlNaypzUKaFWoJ-7uzvQlry4bn0oWgZgTKWwQgumXSGZJejdBfbzeFjYmjemVdg/exec'
-        const form = document.forms['contactForm']
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you for subscribing. We will keep you posted."))
-                .catch(error => console.error(error.message))
-            document.getElementById("contactForm").reset();
-        });
+    <!-- Bootstrap -->
+    <script src="res/js/bootstrap.min.js"></script>
 
-    </script>
-</body>
+    <!-- Plugins -->
+    <script src="res/js/pace.min.js"></script>
+    <script src="res/js/debouncer.min.js"></script>
+    <script src="res/js/jquery.easing.min.js"></script>
+    <script src="res/js/jquery.inview.min.js"></script>
+    <script src="res/js/jquery.matchHeight.js"></script>
+    <script src="res/js/isotope.pkgd.min.js"></script>
+    <script src="res/js/imagesloaded.pkgd.min.js"></script>
+    <script src="res/js/flickity.pkgd.min.js"></script>
+    <script src="res/js/jquery.magnific-popup.min.js"></script>
+    <script src="res/js/jquery.validate.min.js"></script>
 
+    <!-- BG slideshow -->
+    <script src="res/js/jquery.flexslider.min.js"></script>
+
+    <!-- BG Parallax JS -->
+    <script src="res/js/TweenMax.min.js"></script>
+    <script src="res/js/ScrollMagic.min.js"></script>
+    <script src="res/js/animation.gsap.min.js"></script>
+
+    <!-- Theme -->
+    <script src="res/js/main.js"></script>
+
+    <!-- Countdown -->
+    <script src="res/js/jquery.countdown.min.js"></script>
+    <script src="res/js/countdown.js"></script>
+  </body>
 </html>
